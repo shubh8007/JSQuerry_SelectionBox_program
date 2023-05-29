@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="./jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          var p = $("select option:selected").val();
+          alert(p)
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <select>
+      <option value="test">select one</option>
+      <option value="pune">pune</option>
+      <option value="satara">satara</option>
+      <option value="nashik">nashik</option>
+      <option value="sangli">sangli</option>
+      <option value="kolhapur">kolhapur</option>
+    </select>
+    <button type="button" name="btn" id="btn" value="btn">check places</button>
+  </body>
+</html>
